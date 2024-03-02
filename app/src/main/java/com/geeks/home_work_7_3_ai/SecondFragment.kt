@@ -36,4 +36,6 @@ class SecondFragment : Fragment() {
         binding.rvPlaylist.adapter = adapter
     }
 
-}
+
+    }
+

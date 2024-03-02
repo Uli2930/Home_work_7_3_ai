@@ -35,7 +35,7 @@ class PlaylistAdapter(private val playlist: ArrayList<Playlist>) :
     inner class PlaylistViewHolder(private var binding: ItemSecondPlaylistBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(model: Playlist) {
-
+            binding.songPosition.text = (adapterPosition + 1).toString()
             binding.tvName.text = model.name
             binding.tvArtist.text = model.artist
 
